@@ -3,21 +3,21 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const galleryImages = [
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 1', aiHint: 'indian wedding decor' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 2', aiHint: 'bride groom ceremony' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 3', aiHint: 'wedding mandap' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 4', aiHint: 'wedding sangeet dance' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 5', aiHint: 'henna design hands' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 6', aiHint: 'royal wedding venue' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 7', aiHint: 'indian wedding food' },
-  { src: 'https://placehold.co/400x400.png', alt: 'Event photo 8', aiHint: 'wedding couple portrait' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 1', aiHint: 'indian wedding decor' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 2', aiHint: 'bride groom ceremony' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 3', aiHint: 'wedding mandap' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 4', aiHint: 'wedding sangeet dance' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 5', aiHint: 'henna design hands' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 6', aiHint: 'royal wedding venue' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 7', aiHint: 'indian wedding food' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Event photo 8', aiHint: 'wedding couple portrait' },
 ];
 
 export function GalleryPreview() {
   return (
     <section className="py-16 lg:py-24 bg-secondary dark:bg-card">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-7xl lg:text-8xl text-primary" style={{fontFamily: 'Tangerine, cursive'}}>Event Wonders</h2>
+        <h2 className="font-headline text-7xl lg:text-8xl text-accent" style={{fontFamily: 'Tangerine, cursive'}}>Event Wonders</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           A visual journey through some of our most memorable events.
         </p>

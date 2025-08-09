@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/logo';
 
@@ -56,14 +55,12 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-             <ThemeToggle />
           </div>
 
           {/* Mobile Menu */}
           <div className="md:hidden flex items-center justify-between w-full">
             <Logo size={64} />
             <div className="flex items-center">
-              <ThemeToggle />
               <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className="ml-2">
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
                 <span className="sr-only">Open menu</span>

@@ -9,7 +9,7 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-full relative aspect-square">
             <Image
-              src="https://placehold.co/600x600.png"
+              src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg"
               alt="Maa Savitri Event Planner team"
               fill
               className="object-cover rounded-lg shadow-lg"
@@ -17,7 +17,7 @@ export function AboutSection() {
             />
           </div>
           <div>
-            <h2 className="font-headline text-7xl lg:text-8xl text-primary" style={{fontFamily: 'Tangerine, cursive'}}>About Us</h2>
+            <h2 className="font-headline text-7xl lg:text-8xl text-accent" style={{fontFamily: 'Tangerine, cursive'}}>About Us</h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
               Maa Savitri Event Planner is a premier event management company dedicated to creating unforgettable experiences. With years of expertise, a passion for perfection, and a network of the finest vendors, we bring your vision to life. From intimate gatherings to grand celebrations, we handle every detail with precision and care, ensuring a seamless and spectacular event.
             </p>

@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const teamMembers = [
-  { name: 'Savitri Devi', role: 'Founder & CEO', avatar: 'https://placehold.co/150x150.png', aiHint: 'business woman' },
-  { name: 'Rajesh Kumar', role: 'Head of Operations', avatar: 'https://placehold.co/150x150.png', aiHint: 'professional man' },
-  { name: 'Anjali Singh', role: 'Creative Director', avatar: 'https://placehold.co/150x150.png', aiHint: 'creative woman' },
+  { name: 'Savitri Devi', role: 'Founder & CEO', avatar: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'business woman' },
+  { name: 'Rajesh Kumar', role: 'Head of Operations', avatar: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'professional man' },
+  { name: 'Anjali Singh', role: 'Creative Director', avatar: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'creative woman' },
 ];
 
 export default function AboutPage() {
@@ -24,18 +24,18 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="font-headline text-4xl text-primary">Our Mission</h2>
+                <h2 className="font-headline text-5xl lg:text-6xl text-accent">Our Mission</h2>
                 <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                   Our mission is to craft exceptional and personalized events that leave a lasting impression. We are committed to understanding our clients' visions and bringing them to life with creativity, precision, and unwavering dedication. We strive to exceed expectations at every turn, ensuring each celebration is not just an event, but a cherished memory.
                 </p>
-                 <h2 className="font-headline text-4xl text-primary mt-12">Our Vision</h2>
+                 <h2 className="font-headline text-5xl lg:text-6xl text-accent mt-12">Our Vision</h2>
                 <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
                   To be the most sought-after event planning company, renowned for our innovative designs, flawless execution, and commitment to creating magical experiences. We envision a future where every celebration we touch becomes a benchmark for excellence and heartfelt joy.
                 </p>
               </div>
               <div className="relative aspect-square w-full h-full">
                 <Image
-                  src="https://placehold.co/600x600.png"
+                  src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg"
                   alt="Vision of an event"
                   fill
                   className="object-cover rounded-lg shadow-2xl"
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
         <section className="py-16 lg:py-24 bg-secondary dark:bg-card">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-headline text-4xl lg:text-5xl text-primary">Meet The Team</h2>
+            <h2 className="font-headline text-5xl lg:text-6xl text-accent">Meet The Team</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
               {teamMembers.map(member => (
                 <div key={member.name} className="flex flex-col items-center">
@@ -66,7 +66,7 @@ export default function AboutPage() {
         
         <section className="py-16 lg:py-24">
             <div className="container mx-auto px-4 text-center">
-                <h2 className="font-headline text-4xl lg:text-5xl text-primary">Visit Us</h2>
+                <h2 className="font-headline text-5xl lg:text-6xl text-accent">Visit Us</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
                     We'd love to discuss your next event. Find us here.
                 </p>

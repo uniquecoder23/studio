@@ -14,7 +14,7 @@ export function Hero() {
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover"
-        poster="https://placehold.co/1920x1080.png"
+        poster="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg"
       >
         <source src="https://cdn.pixabay.com/video/2022/10/23/136139-764371523_large.mp4" type="video/mp4" />
         Your browser does not support the video tag.

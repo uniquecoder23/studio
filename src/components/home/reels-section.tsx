@@ -3,17 +3,17 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 const reels = [
-  { id: 1, thumbnail: 'https://placehold.co/300x500.png', aiHint: 'wedding dance' },
-  { id: 2, thumbnail: 'https://placehold.co/300x500.png', aiHint: 'event decoration' },
-  { id: 3, thumbnail: 'https://placehold.co/300x500.png', aiHint: 'dj party' },
-  { id: 4, thumbnail: 'https://placehold.co/300x500.png', aiHint: 'happy guests' },
+  { id: 1, thumbnail: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'wedding dance' },
+  { id: 2, thumbnail: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'event decoration' },
+  { id: 3, thumbnail: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'dj party' },
+  { id: 4, thumbnail: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', aiHint: 'happy guests' },
 ];
 
 export function ReelsSection() {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-4xl lg:text-5xl text-primary">Event Moments</h2>
+        <h2 className="font-headline text-5xl lg:text-6xl text-accent">Event Moments</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           Catch glimpses of our vibrant events on Instagram.
         </p>

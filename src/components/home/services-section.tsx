@@ -31,7 +31,7 @@ export function ServicesSection() {
   return (
     <section className="py-20 lg:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-7xl lg:text-8xl text-primary" style={{fontFamily: 'Tangerine, cursive'}}>Our Offerings</h2>
+        <h2 className="font-headline text-7xl lg:text-8xl text-accent" style={{fontFamily: 'Tangerine, cursive'}}>Our Offerings</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           We offer a wide range of bespoke services to make your event a masterpiece.
         </p>

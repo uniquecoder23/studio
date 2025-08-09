@@ -1,18 +1,18 @@
 import Image from 'next/image';
 
 const galleryPhotos = [
-  { src: 'https://placehold.co/600x400.png', alt: 'Wedding reception', category: 'Weddings', aiHint: 'wedding reception' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Birthday party', category: 'Birthdays', aiHint: 'birthday party' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Conference', category: 'Corporate', aiHint: 'business conference' },
-  { src: 'https://placehold.co/600x400.png', alt: 'DJ setup', category: 'Parties', aiHint: 'dj setup' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Bhajan Sandhya stage', category: 'Cultural', aiHint: 'religious event' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Outdoor carnival', category: 'Carnivals', aiHint: 'carnival games' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Elegant table setting', category: 'Weddings', aiHint: 'table setting' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Corporate gala', category: 'Corporate', aiHint: 'corporate gala' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Kids birthday theme', category: 'Birthdays', aiHint: 'kids party' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Bride and groom', category: 'Weddings', aiHint: 'bride groom' },
-  { src: 'https://placehold.co/600x400.png', alt: 'Live band performance', category: 'Parties', aiHint: 'live band' },
-  { src: 'https://placehold.co/400x600.png', alt: 'Product launch stage', category: 'Corporate', aiHint: 'product launch' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Wedding reception', category: 'Weddings', aiHint: 'wedding reception' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Birthday party', category: 'Birthdays', aiHint: 'birthday party' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Conference', category: 'Corporate', aiHint: 'business conference' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'DJ setup', category: 'Parties', aiHint: 'dj setup' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Bhajan Sandhya stage', category: 'Cultural', aiHint: 'religious event' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Outdoor carnival', category: 'Carnivals', aiHint: 'carnival games' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Elegant table setting', category: 'Weddings', aiHint: 'table setting' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Corporate gala', category: 'Corporate', aiHint: 'corporate gala' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Kids birthday theme', category: 'Birthdays', aiHint: 'kids party' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Bride and groom', category: 'Weddings', aiHint: 'bride groom' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Live band performance', category: 'Parties', aiHint: 'live band' },
+  { src: 'https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg', alt: 'Product launch stage', category: 'Corporate', aiHint: 'product launch' },
 ];
 
 export default function GalleryPage() {
@@ -37,7 +37,7 @@ export default function GalleryPage() {
                     src={photo.src}
                     alt={photo.alt}
                     width={600}
-                    height={photo.src.includes('600x400') ? 400 : 600}
+                    height={400}
                     className="w-full h-auto object-cover transform transition-transform duration-500 group-hover:scale-110"
                     data-ai-hint={photo.aiHint}
                   />

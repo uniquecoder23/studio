@@ -6,21 +6,21 @@ const testimonials = [
   {
     name: "Priya & Rohan",
     location: "Mumbai",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     testimonial: "Maa Savitri made our wedding a fairytale. Every detail was perfect, and they handled everything with such grace. We couldn't have asked for a better team!",
     aiHint: "happy couple"
   },
   {
     name: "Sunita Sharma",
     location: "Delhi",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     testimonial: "The Bhajan Sandhya they organized was divine. The atmosphere, the artists, everything was spiritually uplifting. Highly recommended for religious events.",
     aiHint: "smiling woman"
   },
   {
     name: "Innovate Corp.",
     location: "Bangalore",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     testimonial: "Our annual carnival was a huge success, thanks to Maa Savitri Event Planner. Their creativity and execution were flawless. Our employees had a fantastic time!",
     aiHint: "corporate building"
   }
@@ -50,7 +50,7 @@ export function TestimonialsSection() {
   return (
     <section className="py-16 lg:py-24 bg-secondary dark:bg-card">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-4xl lg:text-5xl text-primary">What Our Clients Say</h2>
+        <h2 className="font-headline text-5xl lg:text-6xl text-accent">What Our Clients Say</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           Stories of joy and celebration, shared by those we've had the pleasure to serve.
         </p>
