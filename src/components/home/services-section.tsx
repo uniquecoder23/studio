@@ -59,8 +59,8 @@ export function ServicesSection() {
             </Card>
           ))}
         </div>
-        <Button asChild size="lg" className="mt-16">
-          <Link href="/services">Explore All Services</Link>
+        <Button asChild size="lg" className="mt-16 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Link href="/services" style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">Explore All Services</Link>
         </Button>
       </div>
     </section>

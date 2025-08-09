@@ -27,8 +27,8 @@ export function Hero() {
         <p className="mt-2 text-2xl md:text-3xl max-w-3xl font-body text-gray-200 drop-shadow-lg animate-fade-in-up">
           Weaving Dreams into Grand Celebrations
         </p>
-        <Button asChild size="lg" className="mt-10 animate-fade-in-up bg-primary/80 border-accent text-primary-foreground hover:bg-primary">
-          <Link href="/contact">Begin Your Story</Link>
+        <Button asChild size="lg" className="mt-10 animate-fade-in-up bg-accent/80 border-accent text-accent-foreground hover:bg-accent">
+          <Link href="/contact" style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">Begin Your Story</Link>
         </Button>
       </div>
     </section>

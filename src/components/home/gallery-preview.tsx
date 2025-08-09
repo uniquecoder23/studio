@@ -35,8 +35,8 @@ export function GalleryPreview() {
             </div>
           ))}
         </div>
-        <Button asChild size="lg" className="mt-12">
-          <Link href="/gallery">View Full Gallery</Link>
+        <Button asChild size="lg" className="mt-12 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Link href="/gallery" style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">View Full Gallery</Link>
         </Button>
       </div>
     </section>

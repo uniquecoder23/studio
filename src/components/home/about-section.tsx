@@ -24,8 +24,8 @@ export function AboutSection() {
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
               Our philosophy is simple: your event is our masterpiece. We believe in building strong client relationships, understanding your unique style and needs to craft a truly personalized event.
             </p>
-            <Button asChild size="lg" className="mt-8">
-              <Link href="/about">Discover Our Story</Link>
+            <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/about" style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">Discover Our Story</Link>
             </Button>
           </div>
         </div>

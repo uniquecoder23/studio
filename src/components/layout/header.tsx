@@ -43,8 +43,8 @@ export function Header() {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-end items-center space-x-6">
             {navLinks.slice(0, 3).map(link => (
-              <Link key={link.href} href={link.href} className={cn(
-                "font-body text-lg font-medium transition-colors",
+              <Link key={link.href} href={link.href} style={{fontFamily: 'Qwigley, cursive'}} className={cn(
+                "text-3xl font-medium transition-colors",
                 isScrolled ? "text-accent hover:text-primary" : "text-white hover:text-primary"
               )}>
                 {link.label}
@@ -58,8 +58,8 @@ export function Header() {
 
           <div className="hidden md:flex flex-1 justify-start items-center space-x-6">
             {navLinks.slice(3).map(link => (
-              <Link key={link.href} href={link.href} className={cn(
-                "font-body text-lg font-medium transition-colors",
+              <Link key={link.href} href={link.href} style={{fontFamily: 'Qwigley, cursive'}} className={cn(
+                "text-3xl font-medium transition-colors",
                 isScrolled ? "text-accent hover:text-primary" : "text-white hover:text-primary"
               )}>
                 {link.label}
@@ -80,7 +80,7 @@ export function Header() {
           <div className="md:hidden py-4 bg-white/10 backdrop-blur-lg">
             <div className="flex flex-col items-center space-y-4">
               {navLinks.map(link => (
-                <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className={cn("text-lg font-medium transition-colors font-body", isScrolled ? "text-accent hover:text-primary" : "text-white hover:text-primary")}>
+                <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} style={{fontFamily: 'Qwigley, cursive'}} className={cn("text-3xl font-medium transition-colors", isScrolled ? "text-accent hover:text-primary" : "text-white hover:text-primary")}>
                   {link.label}
                 </Link>
               ))}

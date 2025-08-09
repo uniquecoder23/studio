@@ -35,8 +35,8 @@ export function ReelsSection() {
             </Link>
           ))}
         </div>
-        <Button asChild size="lg" className="mt-12">
-          <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">Other Reels</Link>
+        <Button asChild size="lg" className="mt-12 bg-accent text-accent-foreground hover:bg-accent/90">
+          <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">Other Reels</Link>
         </Button>
       </div>
     </section>

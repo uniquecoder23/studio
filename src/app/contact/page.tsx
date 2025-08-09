@@ -13,8 +13,8 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" disabled={pending} className="w-full" size="lg">
-      {pending ? "Sending..." : "Send Message"} <Send className="ml-2 h-4 w-4" />
+    <Button type="submit" disabled={pending} className="w-full bg-accent text-accent-foreground hover:bg-accent/90" size="lg">
+      <span style={{fontFamily: 'Qwigley, cursive'}} className="text-3xl">{pending ? "Sending..." : "Send Message"}</span> <Send className="ml-2 h-4 w-4" />
     </Button>
   );
 }
