@@ -22,7 +22,7 @@ export function Hero() {
       <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="font-headline text-8xl md:text-9xl lg:text-[10rem] text-white drop-shadow-2xl animate-fade-in-down" style={{fontFamily: 'Tangerine, cursive'}}>
-          Timeless Traditions
+          Maa Savitri Event Planner
         </h1>
         <p className="mt-2 text-2xl md:text-3xl max-w-3xl font-body text-gray-200 drop-shadow-lg animate-fade-in-up">
           Weaving Dreams into Grand Celebrations

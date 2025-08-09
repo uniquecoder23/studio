@@ -31,7 +31,7 @@ export function Header() {
   return (
     <header className={cn(
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "bg-background/80 backdrop-blur-sm shadow-md" : "bg-transparent text-white"
+      isScrolled ? "bg-white/10 backdrop-blur-lg shadow-lg border-b border-white/20" : "bg-transparent text-white"
     )}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
@@ -39,7 +39,7 @@ export function Header() {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-end items-center space-x-6">
             {navLinks.slice(0, 3).map(link => (
-              <Link key={link.href} href={link.href} className="text-lg font-medium hover:text-primary transition-colors">
+              <Link key={link.href} href={link.href} className={cn("text-lg font-medium transition-colors", isScrolled ? "text-primary-foreground hover:text-primary" : "hover:text-primary")}>
                 {link.label}
               </Link>
             ))}
@@ -51,7 +51,7 @@ export function Header() {
 
           <div className="hidden md:flex flex-1 justify-start items-center space-x-6">
             {navLinks.slice(3).map(link => (
-              <Link key={link.href} href={link.href} className="text-lg font-medium hover:text-primary transition-colors">
+              <Link key={link.href} href={link.href} className={cn("text-lg font-medium transition-colors", isScrolled ? "text-primary-foreground hover:text-primary" : "hover:text-primary")}>
                 {link.label}
               </Link>
             ))}
@@ -61,7 +61,7 @@ export function Header() {
           <div className="md:hidden flex items-center justify-between w-full">
             <Logo size={64} />
             <div className="flex items-center">
-              <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className="ml-2">
+              <Button variant="ghost" onClick={() => setIsOpen(!isOpen)} className={cn("ml-2", isScrolled ? "text-foreground" : "text-white")}>
                 {isOpen ? <X size={28} /> : <Menu size={28} />}
                 <span className="sr-only">Open menu</span>
               </Button>
@@ -70,10 +70,10 @@ export function Header() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-4 bg-background/95 text-foreground">
+          <div className="md:hidden py-4 bg-white/10 backdrop-blur-lg">
             <div className="flex flex-col items-center space-y-4">
               {navLinks.map(link => (
-                <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-lg font-medium hover:text-primary transition-colors">
+                <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary-foreground hover:text-primary transition-colors">
                   {link.label}
                 </Link>
               ))}
