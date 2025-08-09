@@ -1,35 +1,30 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Gem, Music, PartyPopper, VenetianMask } from 'lucide-react';
 import React from 'react';
 import Image from 'next/image';
 
 const services = [
   {
     title: 'Grand Weddings',
-    icon: <Gem className="h-10 w-10 text-primary" />,
     description: 'Exquisite wedding planning for a truly unforgettable and grand celebration.',
     bgImage: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     aiHint: "grand wedding stage"
   },
   {
     title: 'Sangeet & Receptions',
-    icon: <Music className="h-10 w-10 text-primary" />,
     description: 'Sophisticated and seamless events that reflect your company’s prestige.',
     bgImage: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     aiHint: "sangeet dance floor"
   },
   {
     title: 'Cultural Celebrations',
-    icon: <VenetianMask className="h-10 w-10 text-primary" />,
     description: 'Creative and immersive themed parties that transport your guests.',
     bgImage: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     aiHint: "cultural event decor"
   },
   {
     title: 'Royal Destination Events',
-    icon: <PartyPopper className="h-10 w-10 text-primary" />,
     description: 'Elegant evenings of music, from classical quartets to soulful jazz bands.',
     bgImage: "https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg",
     aiHint: "destination wedding"
@@ -56,12 +51,9 @@ export function ServicesSection() {
                 />
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300"></div>
                 <div className="relative flex flex-col justify-center items-center h-full p-6 text-white">
-                  <div className="bg-primary/20 backdrop-blur-sm rounded-full p-5 w-fit group-hover:scale-110 group-hover:bg-accent/30 transition-all duration-300">
-                    {React.cloneElement(service.icon, { className: 'h-10 w-10 text-white' })}
-                  </div>
-                  <CardTitle className="font-headline text-5xl pt-6 text-white" style={{fontFamily: 'Alegreya, serif'}}>{service.title}</CardTitle>
-                  <CardContent className="pt-2">
-                    <p className="text-gray-200">{service.description}</p>
+                  <h3 className="font-offering text-6xl pt-6 text-white">{service.title}</h3>
+                  <CardContent className="pt-4">
+                    <p className="text-gray-200 text-lg">{service.description}</p>
                   </CardContent>
                 </div>
             </Card>
