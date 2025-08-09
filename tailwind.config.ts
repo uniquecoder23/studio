@@ -12,7 +12,7 @@ export default {
       fontFamily: {
         body: ['"Alegreya"', 'serif'],
         headline: ['"Tangerine"', 'cursive'],
-        offering: ['"Ruthie"', 'cursive'],
+        offering: ['"Qwigley"', 'cursive'],
         code: ['monospace'],
       },
       colors: {
