@@ -12,22 +12,22 @@ export function StorySection() {
           <div className="relative aspect-[3/4] group overflow-hidden rounded-lg shadow-lg">
             <Image src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg" alt="Wedding ceremony" fill className="object-cover transition-transform duration-500 group-hover:scale-110" data-ai-hint="wedding ceremony"/>
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <h3 className="absolute bottom-4 left-4 font-headline text-2xl text-white">Weddings</h3>
+            <h3 className="absolute bottom-4 left-4 font-headline text-4xl text-white">Weddings</h3>
           </div>
           <div className="relative aspect-[3/4] group overflow-hidden rounded-lg shadow-lg">
             <Image src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg" alt="Corporate event" fill className="object-cover transition-transform duration-500 group-hover:scale-110" data-ai-hint="corporate event" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <h3 className="absolute bottom-4 left-4 font-headline text-2xl text-white">Corporate</h3>
+            <h3 className="absolute bottom-4 left-4 font-headline text-4xl text-white">Corporate</h3>
           </div>
           <div className="relative aspect-[3/4] group overflow-hidden rounded-lg shadow-lg">
             <Image src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg" alt="Social gathering" fill className="object-cover transition-transform duration-500 group-hover:scale-110" data-ai-hint="social gathering" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <h3 className="absolute bottom-4 left-4 font-headline text-2xl text-white">Social</h3>
+            <h3 className="absolute bottom-4 left-4 font-headline text-4xl text-white">Social</h3>
           </div>
           <div className="relative aspect-[3/4] group overflow-hidden rounded-lg shadow-lg">
             <Image src="https://cdn.pixabay.com/photo/2022/03/09/09/16/wedding-7057465_1280.jpg" alt="Cultural festival" fill className="object-cover transition-transform duration-500 group-hover:scale-110" data-ai-hint="cultural festival" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-            <h3 className="absolute bottom-4 left-4 font-headline text-2xl text-white">Cultural</h3>
+            <h3 className="absolute bottom-4 left-4 font-headline text-4xl text-white">Cultural</h3>
           </div>
         </div>
       </div>
