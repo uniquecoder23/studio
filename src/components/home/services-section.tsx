@@ -6,23 +6,23 @@ import React from 'react';
 
 const services = [
   {
-    title: 'Luxury Weddings',
+    title: 'Grand Weddings',
     icon: <Gem className="h-10 w-10 text-primary" />,
     description: 'Exquisite wedding planning for a truly unforgettable and grand celebration.'
   },
   {
-    title: 'Corporate Galas',
-    icon: <Film className="h-10 w-10 text-primary" />,
+    title: 'Sangeet & Receptions',
+    icon: <Music className="h-10 w-10 text-primary" />,
     description: 'Sophisticated and seamless events that reflect your company’s prestige.'
   },
   {
-    title: 'Themed Parties',
+    title: 'Cultural Celebrations',
     icon: <VenetianMask className="h-10 w-10 text-primary" />,
     description: 'Creative and immersive themed parties that transport your guests.'
   },
   {
-    title: 'Musical Soirees',
-    icon: <Music className="h-10 w-10 text-primary" />,
+    title: 'Royal Destination Events',
+    icon: <PartyPopper className="h-10 w-10 text-primary" />,
     description: 'Elegant evenings of music, from classical quartets to soulful jazz bands.'
   }
 ];
@@ -31,7 +31,7 @@ export function ServicesSection() {
   return (
     <section className="py-20 lg:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-headline text-4xl lg:text-5xl text-primary">Signature Services</h2>
+        <h2 className="font-headline text-7xl lg:text-8xl text-primary" style={{fontFamily: 'Tangerine, cursive'}}>Our Offerings</h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
           We offer a wide range of bespoke services to make your event a masterpiece.
         </p>
@@ -42,7 +42,7 @@ export function ServicesSection() {
                 <div className="mx-auto bg-primary/10 rounded-full p-5 w-fit group-hover:scale-110 group-hover:bg-accent/20 transition-all duration-300">
                   {service.icon}
                 </div>
-                <CardTitle className="font-headline text-3xl pt-6">{service.title}</CardTitle>
+                <CardTitle className="font-headline text-5xl pt-6" style={{fontFamily: 'Alegreya, serif'}}>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">{service.description}</p>

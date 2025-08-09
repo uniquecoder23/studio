@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"Poppins"', 'sans-serif'],
-        headline: ['"Cormorant Garamond"', 'serif'],
+        body: ['"Alegreya"', 'serif'],
+        headline: ['"Tangerine"', 'cursive'],
         code: ['monospace'],
       },
       colors: {
