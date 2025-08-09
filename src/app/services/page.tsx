@@ -53,7 +53,7 @@ export default function ServicesPage() {
                   <h2 className="font-headline text-4xl text-primary mb-8 text-center md:text-left">{category.category}</h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {category.services.map(service => (
-                      <Card key={service.name} className="flex flex-col">
+                      <Card key={service.name} className="flex flex-col hover:shadow-xl transition-shadow duration-300">
                         <CardHeader>
                             <CardTitle className="font-headline text-2xl">{service.name}</CardTitle>
                             <CardDescription className="pt-2">{service.description}</CardDescription>
