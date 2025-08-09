@@ -16,7 +16,7 @@ export function Hero() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         poster="https://placehold.co/1920x1080.png"
       >
-        <source src="https://cdn.pixabay.com/video/2024/05/29/211330-947355113_large.mp4" type="video/mp4" />
+        <source src="https://cdn.pixabay.com/video/2022/10/23/136139-764371523_large.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
