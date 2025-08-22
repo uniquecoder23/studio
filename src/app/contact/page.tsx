@@ -10,6 +10,18 @@ import { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
+export type ContactFormState = {
+  message: string;
+  errors?: {
+    name?: string[];
+    email?: string[];
+    phone?: string[];
+    subject?: string[];
+    message?: string[];
+  };
+  success: boolean;
+};
+
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
@@ -20,7 +32,7 @@ function SubmitButton() {
 }
 
 export default function ContactPage() {
-  const initialState = { message: null, errors: {}, success: false };
+  const initialState: ContactFormState = { message: "", errors: {}, success: false };
   const [state, dispatch] = useFormState(submitContactForm, initialState);
   const { toast } = useToast();
 
