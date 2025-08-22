@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Maa Savitri Event Planner",
-  description: "Crafting wonderful events. Begin yours with the event vogue.",
+  title: "Future Finder | School & College Admissions",
+  description: "Your one-stop platform to find and apply to the best schools and colleges.",
 };
 
 export default function RootLayout({
@@ -16,13 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Qwigley&family=Tangerine:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
       </head>
-      <body className={cn("min-h-screen bg-background font-body text-foreground antialiased")}>
+      <body className={cn("min-h-screen bg-background font-sans text-foreground antialiased")}>
           <div className="relative flex min-h-dvh flex-col">
             <Header />
             <main className="flex-1">{children}</main>
